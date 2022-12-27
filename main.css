@@ -30,11 +30,12 @@
     width: 100%;
 }
 .bubleUl span{
+    display: block;
     position: relative;
     width: 20px;
     height: 20px;
     background: #616068;
-    margin: 0 4px;
+    margin: 0 2px;
     border-radius: 50%;
     box-shadow: 0 0 0 10px #f6f2f264, 0 0 50px rgb(255, 253, 253), 0 0 100px rgb(242, 239, 239);
     animation: animate 15s linear infinite ;
@@ -189,25 +190,28 @@
     animation:0.8s linear ;
     background-color: #adadad;
 }
+.contact-me>ul>li>a{
+  text-decoration: none;
+}
 
-.contact-me>ul>li>i{
+.contact-me>ul>li>a>i{
     padding:13px 13px 13px 58px;
 }
-.contact-me>ul>li>span{
+.contact-me>ul>li>a>span{
     text-align: center;
     width: 100%;
 }
 /* contact list */
-.fb{
+.fb a{
     color: #0d00da;
 }
-.tw{
+.tw a{
     color: #00a2ff;
 }
-.gt{
+.gt a{
    color:black;
 }
-.mail{
+.mail a{
     color: #fff;
 
 }
@@ -217,6 +221,9 @@
 
 /* resp..... */
 @media screen and (max-width: 800px) {
+    .name{
+        text-align: center;
+    }
    .body{
     padding-top: 15vh;
    }
@@ -249,10 +256,10 @@
     display: flex;
     justify-content: center;
    }
-   .contact-me>ul>li>i{
+   .contact-me>ul>li>a>i{
     padding: 13px 13px 13px 0px;
    }
-   .contact-me>ul>li>span{
+   .contact-me>ul>li>a>span{
     width: auto;
    }
 }
